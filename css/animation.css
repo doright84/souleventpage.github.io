@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* doongdoong */
+
+/* 둥둥뜨기 */
+@keyframes doongdoong {
+
+    0%,
+    100% {
+        margin-top: 0px;
+        -webkit-margin-top: 0;
+    }
+
+    20%,
+    80% {
+        margin-top: 20px;
+        -webkit-margin-top: 20px;
+    }
+
+    35%,
+    65% {
+        margin-top: 6px;
+        -webkit-margin-top: 6px;
+    }
+
+    50% {
+        margin-top: 10px;
+        -webkit-margin-top: 10px;
+    }
+
+    /* 0%,
+    100% {
+       transform: translateY(0);
+       -webkit-transform: translateY(0);
+    }
+    20%,
+    80% {
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+    }
+    35%,
+    65% {
+        transform: translateY(6px);
+        -webkit-transform: translateY(6px);
+    }
+    50%{
+        transform: translateY(10px);
+           -webkit-transform: translateY(10px);
+    } */
+}
+@keyframes scale{
+    0%,100%{
+        transform: scaleX(100%);
+    }
+    50%{
+        transform: scaleX(110%);
+    }
+}
