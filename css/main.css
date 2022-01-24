@@ -27,7 +27,6 @@ button {
     border: none;
 }
 
-html {}
 
 body {
     font-family: 'Roboto', 'Noto Sans KR', sans-serif;
@@ -86,65 +85,6 @@ body {
     text-align: center;
 }
 
-/* 안내창 */
-.modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 9999;
-}
-
-.modal-cont {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    display: block;
-    width: 500px;
-    height: 250px;
-    background: #fff;
-    border-radius: 20px;
-    padding: 50px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.modal-cont>span {
-    position: relative;
-    display: block;
-    font-weight: 300;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.modal-cont>span>b {
-    font-weight: 600;
-}
-
-.modal-cont button {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.modal-cont button>img {
-    position: relative;
-    display: inline-block;
-    line-height: 50px;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
 /* gotop */
 .gotop {
     position: fixed;
@@ -152,47 +92,27 @@ body {
     bottom: 80px;
     display: block;
     width: 50px;
-    line-height: 50px;
+    height: 50px;
     box-shadow: 3px 3px 6px 1px rgba(12, 46, 116, 0.3);
     border-radius: 50px;
-    background-color: #fff;
+    background:url('../images/go_top.png')no-repeat center;
     cursor: pointer;
-    text-align: center;
     font-weight: 600;
     font-size: 20px;
     transition: background 0.3s;
-    transition: color 0.3s;
     z-index: 999;
 }
 
 .gotop:hover {
-    background-color: #ffcc00;
-    color: #fff;
+    background: url('../images/go_top_h.png')no-repeat center;
 }
-
-.process {
-    height: 1800px;
-    background-color: aqua;
-}
-
-/* header */
-.header {}
-
-/* overview */
-.overview {}
-
-/* color */
-.color {}
-
-/* typo */
-.typo {}
 
 /* design */
 .design {
     width: 100vw;
     height: 8055px;
     background: url('../images/design_bg.jpg')no-repeat center;
-   background-size: cover;
+    background-size: cover;
 }
 
 .design-header {
@@ -338,12 +258,13 @@ body {
     justify-content: space-around;
     margin-bottom: 80px;
 }
-.event1-22{
+
+.event1-22 {
     position: absolute;
     display: block;
     right: -300px;
     bottom: 400px;
-    animation: doongdoong 4s infinite;
+    animation: doongdoong 5s infinite;
 }
 
 /* event2 */
@@ -388,19 +309,22 @@ body {
     right: 30px;
     bottom: 20px;
 }
-.event2-c1{
+
+.event2-c1 {
     position: absolute;
     display: block;
     left: 100px;
     bottom: 200px;
 }
-.event2-c2{
+
+.event2-c2 {
     position: absolute;
     display: block;
     right: 400px;
     bottom: 450px;
     opacity: 0.5;
 }
+
 /* event3 */
 .event3 {
     position: relative;
@@ -424,9 +348,11 @@ body {
     text-align: center;
     margin: 0 auto 80px auto;
 }
-.event3-c{
+
+.event3-c {
     animation: doongdoong 5s infinite;
 }
+
 .event3-shadow {
     position: absolute;
     display: block;
@@ -451,18 +377,81 @@ body {
 .event3-talkbox:hover {
     background: url('../images/event3_talk_h.png')no-repeat center;
 }
-.event3-c1{
+
+.event3-c1 {
     position: absolute;
     display: block;
     right: -255px;
     top: 560px;
 }
-.event3-c2{
+
+.event3-c2 {
     position: absolute;
     display: block;
     left: -255px;
     top: 600px;
 }
+
+/* process */
+.process {
+    height: 2440px;
+    background: url('../images/process_bg.jpg')center;
+    background-size: cover;
+}
+
+/* process-공통 */
+.brand-title {
+    position: relative;
+    display: block;
+    margin: 0 auto 50px auto;
+}
+
+.process-c {
+    position: absolute;
+    display: block;
+}
+
+.p-common {
+    position: relative;
+    display: block;
+    padding-bottom: 200px;
+}
+
+/* //process-공통// */
+.process-c1 {
+    top: 650px;
+    left: -220px;
+}
+
+.process-c2 {
+    top: 500px;
+    right: -300px;
+}
+
+.p-header {
+    position: relative;
+    display: block;
+    padding: 200px 0;
+}
+
+.color-cont {
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+.typo-cont {
+    display: block;
+    margin-top: 80px;
+}
+
+.typo-cont>img {
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+
+
 /* banner */
 .banner {}
 
